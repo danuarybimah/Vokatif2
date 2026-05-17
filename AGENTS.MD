@@ -1,5 +1,5 @@
 # VOKATIF API PLATFORM — PROJECT GUIDE
-
+k
 ## Konteks
 
 Vokatif adalah platform event management berbasis Laravel yang menyediakan:
