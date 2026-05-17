@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* Additional utility tweaks for modern dashboard */
+.glass {
+    background: rgba(15, 23, 42, 0.80);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255,255,255,0.04);
+}
+
+.gradient-card {
+    background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 50%, #06b6d4 100%);
+}
+
+/* Prefill states for GSAP-powered elements */
+[data-scroll-card] { opacity: 0; transform: translateY(24px); }
+[data-section-title] { opacity: 0; transform: translateX(-18px); }
+[data-hero-section] { opacity: 0; transform: translateY(18px); }
+
